@@ -8,8 +8,6 @@ import java.util.Date;
 public class ImportantTweet extends Tweet {
     public ImportantTweet(String tweet, Date date) throws TweetTooLongException {
         super(tweet, date);
-        this.setMessage(tweet);
-        this.date = date;
     }
 
     public ImportantTweet(String tweet) throws TweetTooLongException {
