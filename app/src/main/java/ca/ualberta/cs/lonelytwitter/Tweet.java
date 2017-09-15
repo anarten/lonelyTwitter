@@ -4,29 +4,29 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * Created by joshua2 on 9/16/15.
+ * Created by anarten on 9/14/17.
  */
 public abstract class Tweet extends Object implements Tweetable {
-    private String text;
+    private String message;
     protected Date date;
 
     public Tweet(String tweet, Date date) throws TweetTooLongException {
-        this.setText(tweet);
+        this.setMessage(tweet);
         this.date = date;
     }
 
     public Tweet(String tweet) throws TweetTooLongException {
-        this.setText(tweet);
+        this.setMessage(tweet);
         this.date = new Date();
     }
 
-    public String getText() {
-        return text;
+    public String getMessage() {
+        return message;
     }
 
-    public void setText(String text) throws TweetTooLongException {
+    public void setMessage(String text) throws TweetTooLongException {
         if (text.length() <= 140) {
-            this.text = text;
+            this.message = text;
         } else {
             throw new TweetTooLongException();
         }
