@@ -10,7 +10,7 @@ import java.util.Date;
 public abstract class Tweet extends Object implements Tweetable {
     private String message;
     private Date date;
-    private ArrayList<CurrentMood> moodList;
+    private ArrayList<CurrentMood> moodList = new ArrayList<CurrentMood>();
 
     public Tweet(String tweet, Date date) throws TweetTooLongException {
         this.setMessage(tweet);

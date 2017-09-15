@@ -36,4 +36,6 @@ public abstract class CurrentMood extends Object {
         this.date = date;
     }
 
+    public abstract String format();
+
 }

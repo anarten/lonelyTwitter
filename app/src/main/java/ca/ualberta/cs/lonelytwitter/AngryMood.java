@@ -15,4 +15,9 @@ public class AngryMood extends CurrentMood {
         super(mood);
     }
 
+    @Override
+    public String format(){
+        return ">:(";
+    }
+
 }

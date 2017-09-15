@@ -15,4 +15,8 @@ public class HappyMood extends CurrentMood {
         super(mood);
     }
 
+    @Override
+    public String format(){
+        return ":-)";
+    }
 }
