@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: HappyMood
  *
  * Version: 1.0
  *

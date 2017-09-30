@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: Tweetable
  *
  * Version: 1.0
  *

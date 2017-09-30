@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: TweetTooLongException
  *
  * Version: 1.0
  *

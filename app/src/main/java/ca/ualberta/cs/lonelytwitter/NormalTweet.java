@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: NormalTweet
  *
  * Version: 1.0
  *

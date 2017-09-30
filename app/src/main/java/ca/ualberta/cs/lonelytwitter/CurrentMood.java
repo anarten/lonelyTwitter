@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: CurrentMood
  *
  * Version: 1.0
  *

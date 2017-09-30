@@ -1,5 +1,5 @@
 /*
- * Class Name: Tweet
+ * Class Name: ImportantTweet
  *
  * Version: 1.0
  *
