@@ -2,6 +2,8 @@ package ca.ualberta.cs.lonelytwitter;
 
 import android.test.ActivityInstrumentationTestCase2;
 
+import java.util.ArrayList;
+
 /**
  * Created by anarten on 10/12/17.
  */
@@ -41,5 +43,13 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         list.addTweet(tweet);
         Tweet returnedTweet = list.getTweet(0);
         assertTrue(returnedTweet.getMessage() == tweet.getMessage());
+    }
+
+    public void testGetCount(){
+        TweetList list = new TweetList();
+        Tweet tweet = new NormalTweet("test");
+        list.addTweet(tweet);
+        int count = list.getCount();
+        assertTrue(count == 1);
     }
 }

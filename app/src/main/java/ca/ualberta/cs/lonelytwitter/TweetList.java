@@ -46,6 +46,6 @@ public class TweetList {
     }
 
     public int getCount() {
-        return 1;
+        return tweets.size();
     }
 }
