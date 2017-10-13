@@ -34,6 +34,10 @@ public abstract class Tweet {
         this.date = date;
     }
 
+    public String getMessage() {
+        return this.message;
+    }
+
     abstract public boolean isImportant();
 
     @Override
