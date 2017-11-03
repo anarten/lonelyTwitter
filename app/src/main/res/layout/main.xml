@@ -8,7 +8,8 @@
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="My old tweets" />
+        android:text="@string/Myoldtweets" /> <!--Refactored to use string constant
+         because this makes modifying multiple constants easier -->
 
     <ListView
         android:id="@+id/oldTweetsList"

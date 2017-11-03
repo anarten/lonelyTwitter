@@ -2,7 +2,7 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 
-public class TweetList {
+class TweetList { // removed public modifier to make Tweetable package private. Classes outside of the current package do not need to access this class
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 
     public TweetList(){

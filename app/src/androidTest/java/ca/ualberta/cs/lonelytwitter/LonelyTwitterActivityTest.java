@@ -7,8 +7,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.robotium.solo.Solo;
-
-import junit.framework.TestCase;
+// removed unused imports because this makes the code cleaner and easier to follow.
 
 public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2<LonelyTwitterActivity> {
     private Solo solo;
@@ -39,33 +38,6 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2<
         solo.clickOnButton("Clear");
         assertFalse(solo.waitForText("Test Tweet!", 1, 1000));
     }
-
-    /**
-     * This Test was written in the lab, see below for my test
-     */
-    /*public void testClickTweetList() {
-        LonelyTwitterActivity activity = (LonelyTwitterActivity) solo.getCurrentActivity();
-
-        solo.assertCurrentActivity("wrong activity", LonelyTwitterActivity.class);
-        solo.clickOnButton("Clear");
-
-        solo.enterText((EditText) solo.getView(R.id.body), "Test Tweet!");
-        solo.clickOnButton("Save");
-        solo.clearEditText((EditText) solo.getView(R.id.body));
-        assertTrue(solo.waitForText("Test Tweet!"));
-
-        final ListView oldTweetsList = activity.getOldTweetsList();
-        Tweet tweet = (Tweet) oldTweetsList.getItemAtPosition(0);
-        assertEquals("Test Tweet!", tweet.getMessage());
-
-        solo.clickInList(0);
-        solo.assertCurrentActivity("wrong activity", EditTweetActivity.class);
-
-        assertTrue(solo.waitForText("New Activity"));
-        solo.goBack();
-        solo.assertCurrentActivity("wrong activity", LonelyTwitterActivity.class);
-
-    }*/
 
     /**
      * My test for the lab exercise

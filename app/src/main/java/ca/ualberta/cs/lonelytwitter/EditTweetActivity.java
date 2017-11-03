@@ -2,9 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -17,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+// removed unused imports because this makes the code cleaner and easier to follow.
 
 public class EditTweetActivity extends Activity {
 
@@ -38,7 +36,7 @@ public class EditTweetActivity extends Activity {
 
         Bundle extras = getIntent().getExtras();
         int position = extras.getInt("position");
-        Tweet tweet = (Tweet) tweetList.get(position);
+        Tweet tweet = tweetList.get(position); // removed redundant cast to Tweet because casting to the type itself is unnecessary.
 
         TextView date = (TextView) findViewById(R.id.textView);
         TextView message = (TextView) findViewById(R.id.textView2);
